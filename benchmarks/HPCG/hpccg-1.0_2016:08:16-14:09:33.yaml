@@ -1,0 +1,27 @@
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 12
+Dimensions: 
+  nx: 256
+  ny: 256
+  nz: 256
+Number of iterations: : 149
+Final residual: : 2.242e-18
+********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 371.25
+  DDOT    : 19.2843
+  WAXPBY  : 60.5843
+  SPARSEMV: 291.341
+FLOPS Summary: 
+  Total   : 1.59988e+11
+  DDOT    : 9.99922e+09
+  WAXPBY  : 1.49988e+10
+  SPARSEMV: 1.34989e+11
+MFLOPS Summary: 
+  Total   : 430.943
+  DDOT    : 518.517
+  WAXPBY  : 247.569
+  SPARSEMV: 463.338
