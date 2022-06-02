@@ -1,0 +1,51 @@
+I. Description
+--------------
+
+The Resource Manager (RM) module is responsible for managing the hardware resources assigned to each container and guiding the concurrent execution of different containers. 
+More specifically, while TT-Autoscaling is active, the RM (i) collects the information from the execution environment and each running container through Docker functions; (ii) based on the obtained data, RM evaluates the need to adapt the hardware resources (e.g., number of processing units) assigned to each container; and (iii) if needed, it relocates the containers over the new hardware resources.
+
+
+
+II. File List
+-------------
+
+AMD		contains script to read energy consumption of the entire execution when RM is enabled. Script is activated into main.py.
+classes		contains the files with the classes implemented by RM.
+functions	contains the files with functions implemented by RM.
+input		contains the file with the input list of applications that will be executed in a bash manner.
+main.py		implements the main function of RM.
+out		contains the energy consumption obtained for the execution of RM on the AMD platform.
+
+
+
+III. Executing RM
+-----------------
+
+A. Before executing RM, please apply the following modifications if needed (information is provided within each file):
+	- classes/rm_classes.py:
+		* edit the classes "rmMachine", "rmDockerCommand", and "rmMapping" accordingly to the target architecture information and docker command.
+		* there is an example when adding a new architecture.
+	- functions/apps.py:
+		* edit the function "rmInitializeApps" in order to read the right file that contains the list with applications. (lines 10 and 20)
+		* the default one is in "input/name_list_apps.txt". Change accordingly.
+	- functions/deploy.py:
+		* no need of modification.
+	- functions/mapping.py:
+		* edit line 69 accordingly. 
+	- functions/stats.py:
+		* edit line 17 accordingly.
+	- input/
+		* include the file with the apps, accordingly. For reproducibility, the list used in the paper is already there. Just need to be copied from "listApps_do_not_delete.txt" to "bufferApps.txt"
+		
+
+B. Once step A is finished, to execute RM, run the follwing command without "":
+	- On an AMD platform: "python3 main.py rm machine_name", where machine_name must be changed by the respective target architecture (e.g., AMD64, INTEL20, INTEL44);
+		* Energy consumption of the entire execution is obtained by running the get_energy script located in AMD directory. Depending on the architecture, it may be necessary to change the sensor id.
+	- On an Intel platform: "perf stat -e power/energy-pkg/,power/energy-ram/ -a -I 1000 -o out_energy.txt -- python3 main.py rm machine_name" to get the energy profile of the entire execution.
+		* Energy consumption of the entire execution is obtained with the perf tool.
+
+
+IV. Considerations
+------------------
+
+A. Depending on the Operating System policy to read hardware counters, it may be need sudo access when running RM.
