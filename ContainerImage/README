@@ -1,0 +1,30 @@
+I. Description
+--------------
+
+This README describes the steps needed to create the Docker image with ITT support.
+
+
+II. File list
+-------------
+
+Dockerfile	contains the information related to the image that will be created.
+gcc_build.zip	file that has the gcc builded in a "zip". This file has been generated in previous steps of the README.
+
+
+III. Generating the image
+-------------------------
+
+A. To generate an image with the ITT enabled, please, do the following steps:
+	- Open Dockerfile and edit the following lines:
+		* line 2: change "COPY ./gcc.zip /home" to "COPY ./gcc_build.zip /home" accordingly to the name of gcc_build.zip defined by the user.
+		* line 3: rename all "gcc.zip" to the name of gcc_build.zip defined by the user.
+	- Save and close Dockerfile.
+
+B. Command to build the image:
+	- Run the following command line: "docker build --tag=sc22 .", where sc22 can be replaced by the name of the image. Here, we consider that sc22 is the name.
+
+C. Check if the build has succesfully completed:
+	- Run the following command line: "docker image ls". If everything goes well, the image sc22 will appear in the list.
+
+D. Once the image has been created, please, return to the main README for the next steps.
+
