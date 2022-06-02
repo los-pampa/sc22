@@ -1,0 +1,73 @@
+AMDPROFILER POWER PROFILE REPORT
+
+LAUNCHED APPLICATION DETAILS
+Target Path:,lulesh2.0,
+Command Line Arguments:,-s 40 ,
+Working Directory:,,
+CPU Core Affinity Mask:,0,
+
+PROFILE DETAILS
+CPU Details:,Family(0x17) Model(0x8)
+Sampling Interval:,1000 milli-seconds
+Profile Start Time:,Apr-22-2020_17-41-55,
+
+PROFILED COUNTERS
+COUNTER ID,NAME,CATEGORY,UNIT,DESCRIPTION
+0.,thread0-core-effective-frequency,Frequency,MHz,Thread0-Average CPU Core Frequency (Core Effective Frequency) for the sampling period in MHz. The core can go into various P-States within the sampling period with its own frequency.
+2.,thread1-core-effective-frequency,Frequency,MHz,Thread1-Average CPU Core Frequency (Core Effective Frequency) for the sampling period in MHz. The core can go into various P-States within the sampling period with its own frequency.
+4.,thread2-core-effective-frequency,Frequency,MHz,Thread2-Average CPU Core Frequency (Core Effective Frequency) for the sampling period in MHz. The core can go into various P-States within the sampling period with its own frequency.
+6.,thread3-core-effective-frequency,Frequency,MHz,Thread3-Average CPU Core Frequency (Core Effective Frequency) for the sampling period in MHz. The core can go into various P-States within the sampling period with its own frequency.
+8.,thread4-core-effective-frequency,Frequency,MHz,Thread4-Average CPU Core Frequency (Core Effective Frequency) for the sampling period in MHz. The core can go into various P-States within the sampling period with its own frequency.
+10.,thread5-core-effective-frequency,Frequency,MHz,Thread5-Average CPU Core Frequency (Core Effective Frequency) for the sampling period in MHz. The core can go into various P-States within the sampling period with its own frequency.
+12.,thread6-core-effective-frequency,Frequency,MHz,Thread6-Average CPU Core Frequency (Core Effective Frequency) for the sampling period in MHz. The core can go into various P-States within the sampling period with its own frequency.
+14.,thread7-core-effective-frequency,Frequency,MHz,Thread7-Average CPU Core Frequency (Core Effective Frequency) for the sampling period in MHz. The core can go into various P-States within the sampling period with its own frequency.
+16.,thread8-core-effective-frequency,Frequency,MHz,Thread8-Average CPU Core Frequency (Core Effective Frequency) for the sampling period in MHz. The core can go into various P-States within the sampling period with its own frequency.
+18.,thread9-core-effective-frequency,Frequency,MHz,Thread9-Average CPU Core Frequency (Core Effective Frequency) for the sampling period in MHz. The core can go into various P-States within the sampling period with its own frequency.
+20.,thread10-core-effective-frequency,Frequency,MHz,Thread10-Average CPU Core Frequency (Core Effective Frequency) for the sampling period in MHz. The core can go into various P-States within the sampling period with its own frequency.
+22.,thread11-core-effective-frequency,Frequency,MHz,Thread11-Average CPU Core Frequency (Core Effective Frequency) for the sampling period in MHz. The core can go into various P-States within the sampling period with its own frequency.
+24.,thread12-core-effective-frequency,Frequency,MHz,Thread12-Average CPU Core Frequency (Core Effective Frequency) for the sampling period in MHz. The core can go into various P-States within the sampling period with its own frequency.
+26.,thread13-core-effective-frequency,Frequency,MHz,Thread13-Average CPU Core Frequency (Core Effective Frequency) for the sampling period in MHz. The core can go into various P-States within the sampling period with its own frequency.
+28.,thread14-core-effective-frequency,Frequency,MHz,Thread14-Average CPU Core Frequency (Core Effective Frequency) for the sampling period in MHz. The core can go into various P-States within the sampling period with its own frequency.
+30.,thread15-core-effective-frequency,Frequency,MHz,Thread15-Average CPU Core Frequency (Core Effective Frequency) for the sampling period in MHz. The core can go into various P-States within the sampling period with its own frequency.
+48.,socket0-package-power,Power,mJ,Socket0-Average Package Power reported in Watts.
+50.,core0-power,Power,mJ,Core0-Average Power reported in Watts.
+52.,core1-power,Power,mJ,Core1-Average Power reported in Watts.
+54.,core2-power,Power,mJ,Core2-Average Power reported in Watts.
+56.,core3-power,Power,mJ,Core3-Average Power reported in Watts.
+58.,core4-power,Power,mJ,Core4-Average Power reported in Watts.
+60.,core5-power,Power,mJ,Core5-Average Power reported in Watts.
+62.,core6-power,Power,mJ,Core6-Average Power reported in Watts.
+64.,core7-power,Power,mJ,Core7-Average Power reported in Watts.
+
+PROFILE RECORDS
+RecordId,Timestamp,thread0-core-effective-frequency,thread1-core-effective-frequency,thread2-core-effective-frequency,thread3-core-effective-frequency,thread4-core-effective-frequency,thread5-core-effective-frequency,thread6-core-effective-frequency,thread7-core-effective-frequency,thread8-core-effective-frequency,thread9-core-effective-frequency,thread10-core-effective-frequency,thread11-core-effective-frequency,thread12-core-effective-frequency,thread13-core-effective-frequency,thread14-core-effective-frequency,thread15-core-effective-frequency,socket0-package-power,core0-power,core1-power,core2-power,core3-power,core4-power,core5-power,core6-power,core7-power
+1,17:41:56:994, 3440.67, 3404.73, 3524.13, 3514.60, 3504.04, 2688.42, 2669.08, 2689.46, 3457.86, 3405.16, 3525.11, 3514.42, 3504.59, 2972.14, 2879.53, 2942.77,   41.04,    4.99,    4.88,    4.99,    4.98,    5.19,    3.14,    3.12,    3.13
+2,17:41:57:994, 3466.80, 3430.50, 3541.04, 3526.37, 3533.19, 2709.12, 2677.45, 2720.99, 3466.80, 3430.56, 3541.03, 3526.29, 3533.21, 2938.66, 2783.96, 2938.13,   41.50,    5.00,    4.99,    5.08,    5.05,    5.29,    3.21,    3.18,    3.21
+3,17:41:58:994, 3461.69, 3426.70, 3536.84, 3521.70, 3528.70, 2719.76, 2709.49, 2726.57, 3461.69, 3426.76, 3536.86, 3521.66, 3528.70, 2920.08, 3020.17, 2458.06,   41.90,    4.99,    4.98,    5.08,    5.04,    5.26,    3.20,    3.18,    3.19
+4,17:41:59:994, 3463.13, 3427.61, 3537.04, 3522.57, 3528.84, 2747.27, 2685.01, 2706.32, 3463.15, 3427.61, 3537.03, 3522.50, 3528.86, 2999.65, 2852.00, 2864.91,   41.79,    4.99,    4.98,    5.09,    5.05,    5.27,    3.23,    3.17,    3.19
+5,17:42:0:994, 3465.85, 3426.34, 3537.12, 3522.50, 3528.94, 2694.33, 2678.23, 2737.33, 3465.84, 3426.31, 3537.14, 3522.48, 3528.94, 2920.42, 2790.30, 2962.75,   42.27,    5.02,    5.00,    5.10,    5.07,    5.29,    3.21,    3.18,    3.22
+6,17:42:1:994, 3459.32, 3421.73, 3533.42, 3518.09, 3525.51, 2727.20, 2686.59, 2727.96, 3459.32, 3421.79, 3533.43, 3518.06, 3525.52, 2978.39, 2560.87, 2644.67,   42.11,    4.99,    4.97,    5.07,    5.05,    5.28,    3.22,    3.18,    3.21
+7,17:42:2:994, 3463.53, 3423.41, 3536.77, 3521.73, 3528.57, 2681.53, 2680.82, 2716.08, 3463.53, 3423.40, 3536.80, 3521.69, 3528.59, 2856.59, 2884.68, 2401.29,   42.14,    5.01,    4.98,    5.09,    5.06,    5.29,    3.21,    3.20,    3.21
+8,17:42:3:994, 3461.18, 3421.58, 3534.50, 3518.19, 3516.52, 2705.31, 2693.58, 2709.76, 3461.19, 3421.59, 3534.51, 3518.14, 3516.55, 2863.86, 2808.46, 2801.60,   41.79,    5.00,    4.99,    5.09,    5.06,    5.27,    3.22,    3.20,    3.20
+9,17:42:4:994, 3458.17, 3431.59, 3521.83, 3508.54, 3522.42, 2691.84, 2685.59, 2723.76, 3458.16, 3431.67, 3521.85, 3508.53, 3522.45, 2869.38, 2931.60, 2922.84,   41.90,    4.98,    4.97,    5.05,    5.03,    5.26,    3.22,    3.18,    3.22
+10,17:42:5:994, 3461.48, 3506.90, 3538.48, 3537.61, 3529.09, 2683.98, 2680.40, 2683.43, 3461.47, 3506.94, 3538.49, 3537.62, 3529.09, 2835.33, 2772.56, 2801.83,   41.88,    5.00,    5.07,    5.09,    5.07,    5.30,    3.22,    3.20,    3.20
+11,17:42:6:994, 3453.21, 3501.07, 3532.51, 3531.72, 3523.32, 2713.25, 2684.45, 2712.77, 3453.22, 3501.09, 3532.51, 3531.74, 3523.33, 2897.90, 2778.99, 2912.37,   41.90,    4.97,    5.03,    5.07,    5.04,    5.26,    3.22,    3.18,    3.19
+12,17:42:7:994, 3460.23, 3506.20, 3537.99, 3536.95, 3528.54, 2693.31, 2652.99, 2698.63, 3460.23, 3506.26, 3538.02, 3536.96, 3528.56, 2849.84, 2848.10, 2888.76,   42.22,    5.00,    5.05,    5.09,    5.07,    5.29,    3.22,    3.18,    3.20
+13,17:42:8:994, 3457.85, 3503.52, 3535.38, 3534.22, 3525.64, 2702.78, 2668.20, 2704.33, 3457.85, 3503.54, 3535.37, 3534.21, 3525.67, 2929.76, 2789.98, 2910.24,   42.41,    4.99,    5.05,    5.08,    5.06,    5.29,    3.23,    3.19,    3.21
+14,17:42:9:994, 3451.52, 3487.61, 3525.55, 3535.72, 3518.28, 2713.06, 2682.47, 2689.87, 3451.45, 3487.61, 3525.54, 3535.69, 3518.29, 2872.88, 2910.81, 2889.03,   42.33,    4.97,    5.03,    5.06,    5.08,    5.26,    3.22,    3.19,    3.18
+15,17:42:10:994, 3458.38, 3419.75, 3535.54, 3534.24, 3527.21, 2712.75, 2693.43, 2689.44, 3458.37, 3419.80, 3535.55, 3534.25, 3527.25, 2924.98, 2831.14, 2982.08,   42.50,    5.01,    4.99,    5.10,    5.08,    5.30,    3.23,    3.22,    3.21
+16,17:42:11:994, 3457.96, 3418.46, 3533.84, 3532.74, 3525.92, 2723.46, 2681.33, 2707.65, 3457.96, 3418.54, 3533.85, 3532.75, 3525.94, 2901.38, 2735.34, 2428.87,   42.40,    5.01,    4.98,    5.09,    5.07,    5.31,    3.25,    3.20,    3.22
+17,17:42:12:994, 3459.75, 3419.12, 3534.71, 3533.48, 3526.99, 2705.65, 2656.65, 2737.46, 3459.75, 3419.18, 3534.74, 3533.51, 3527.01, 2891.60, 2887.77, 3451.05,   42.18,    5.01,    4.99,    5.10,    5.07,    5.30,    3.24,    3.19,    3.22
+18,17:42:13:994, 3459.94, 3418.58, 3535.84, 3534.54, 3527.93, 2699.01, 2696.12, 2679.75, 3459.93, 3418.61, 3535.87, 3534.55, 3527.93, 2900.06, 2891.12, 2901.05,   42.65,    5.01,    5.00,    5.10,    5.08,    5.31,    3.24,    3.22,    3.21
+19,17:42:14:994, 3460.99, 3407.81, 3524.20, 3513.26, 3528.85, 2727.45, 2666.84, 2707.89, 3460.99, 3407.87, 3524.22, 3513.26, 3528.85, 2991.25, 2760.52, 2384.54,   42.48,    5.02,    4.99,    5.10,    5.06,    5.32,    3.25,    3.21,    3.23
+20,17:42:15:994, 3458.66, 3416.34, 3535.95, 3517.57, 3529.04, 2703.99, 2657.22, 2697.79, 3458.67, 3416.41, 3535.94, 3517.52, 3529.07, 2901.90, 2814.09, 2963.26,   42.49,    5.03,    5.01,    5.12,    5.08,    5.33,    3.24,    3.22,    3.22
+21,17:42:16:994, 3453.64, 3411.61, 3532.05, 3512.78, 3514.72, 2714.30, 2694.73, 2717.26, 3453.64, 3411.64, 3532.07, 3512.76, 3514.72, 2982.08, 2818.79, 2680.64,   42.56,    5.01,    4.99,    5.10,    5.06,    5.30,    3.24,    3.22,    3.23
+22,17:42:17:994, 3453.18, 3415.07, 3532.55, 3514.05, 3525.43, 2703.29, 2677.07, 2719.83, 3453.18, 3415.16, 3532.55, 3514.02, 3525.45, 2945.35, 2759.43, 2935.96,   42.70,    5.00,    4.99,    5.10,    5.06,    5.29,    3.23,    3.21,    3.22
+23,17:42:18:994, 3451.54, 3413.00, 3533.29, 3513.46, 3526.29, 2718.95, 2669.54, 2714.26, 3451.54, 3413.06, 3533.27, 3513.42, 3526.30, 2924.06, 2829.23, 2956.09,   42.66,    5.02,    5.00,    5.12,    5.08,    5.31,    3.25,    3.22,    3.24
+24,17:42:19:994, 3448.84, 3408.14, 3530.69, 3509.81, 3523.73, 2707.13, 2681.57, 2739.63, 3448.84, 3408.21, 3530.70, 3509.80, 3523.74, 2882.03, 2875.70, 2821.28,   42.62,    5.00,    4.98,    5.09,    5.06,    5.29,    3.23,    3.20,    3.24
+25,17:42:20:994, 3448.28, 3408.83, 3530.46, 3509.75, 3523.09, 2698.93, 2684.57, 2727.76, 3448.28, 3408.89, 3530.47, 3509.75, 3523.14, 2894.35, 2698.48, 2834.04,   42.57,    5.01,    4.97,    5.11,    5.07,    5.30,    3.24,    3.21,    3.24
+26,17:42:21:994, 3449.69, 3411.14, 3532.73, 3512.06, 3514.91, 2689.08, 2676.99, 2733.20, 3449.69, 3411.23, 3532.74, 3512.03, 3514.92, 2885.88, 2875.50, 3070.05,   42.67,    5.01,    4.99,    5.10,    5.08,    5.29,    3.24,    3.20,    3.25
+27,17:42:22:994, 3449.48, 3409.60, 3532.52, 3511.87, 3523.14, 2687.51, 2675.01, 2717.10, 3449.48, 3409.66, 3532.54, 3511.84, 3523.15, 2853.77, 2858.74, 3050.98,   42.85,    5.01,    4.99,    5.10,    5.07,    5.30,    3.22,    3.20,    3.23
+28,17:42:23:994, 3449.74, 3409.73, 3533.44, 3511.71, 3524.91, 2695.55, 2658.19, 2689.71, 3449.74, 3409.78, 3533.46, 3511.70, 3524.95, 2855.12, 2941.14, 2978.63,   42.92,    5.02,    4.99,    5.12,    5.08,    5.31,    3.25,    3.20,    3.23
+29,17:42:24:994, 3444.08, 3406.96, 3529.97, 3508.36, 3510.27, 2711.57, 2688.52, 2721.75, 3444.08, 3407.03, 3530.00, 3508.36, 3510.29, 2845.58, 2986.83, 2924.13,   42.98,    4.99,    4.98,    5.09,    5.06,    5.28,    3.23,    3.20,    3.23
+30,17:42:25:994, 3441.46, 3403.56, 3528.28, 3506.59, 3521.37, 2691.08, 2709.94, 2705.36, 3442.07, 3403.08, 3528.13, 3505.64, 3521.46, 2762.44, 2917.70, 2652.91,   32.87,    3.52,    3.52,    3.59,    3.57,    3.74,    2.32,    2.30,    2.31
