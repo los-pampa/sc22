@@ -1,0 +1,100 @@
+IO        : 2.229893
+Compute   : 3.089621
+Timer Wall Time: 5.319532
+Pass
+Parboil parallel benchmark suite, version 0.2
+
+
+Reading parameters
+  Number of samples = 2655910
+  Grid Size = 256x256x256
+  Input Matrix Size = 60x60x60
+  Recon Matrix Size = 60x60x60
+  Kernel Width = 5.000000
+  KMax = 150.00 150.00 150.00
+  Oversampling = 5.000000
+  GPU Binsize = 32
+  Use LUT = Yes
+Reading input data from files
+Generating Look-Up Table
+
+IO        : 0.545794
+Compute   : 37.628345
+Timer Wall Time: 38.197025
+Pass
+Parboil parallel benchmark suite, version 0.2
+
+MAIN_printInfo:
+	grid size      : 120 x 120 x 150 = 2.16 * 10^6 Cells
+	nTimeSteps     : 3000
+	result file    : /home/ipdps/V1/benchmarks/parboil/parboil/benchmarks/lbm/run/long/reference.dat
+	action         : store
+	simulation type: lid-driven cavity
+	obstacle file  : /home/ipdps/V1/benchmarks/parboil/parboil/datasets/lbm/long/input/120_120_150_ldc.of
+
+LBM_allocateGrid: allocated 169.2 MByte
+LBM_allocateGrid: allocated 169.2 MByte
+LBM_showGridStatistics:
+	nObstacleCells:  343321 nAccelCells:   26912 nFluidCells: 1789767
+	minRho:   1.0000 maxRho:   1.0000 mass: 2.160000e+06
+	minU: 0.000000e+00 maxU: 0.000000e+00
+
+timestep: 64
+timestep: 128
+timestep: 192
+timestep: 256
+timestep: 320
+timestep: 384
+timestep: 448
+timestep: 512
+timestep: 576
+timestep: 640
+timestep: 704
+timestep: 768
+timestep: 832
+timestep: 896
+timestep: 960
+timestep: 1024
+timestep: 1088
+timestep: 1152
+timestep: 1216
+timestep: 1280
+timestep: 1344
+timestep: 1408
+timestep: 1472
+timestep: 1536
+timestep: 1600
+timestep: 1664
+timestep: 1728
+timestep: 1792
+timestep: 1856
+timestep: 1920
+timestep: 1984
+timestep: 2048
+timestep: 2112
+timestep: 2176
+timestep: 2240
+timestep: 2304
+timestep: 2368
+timestep: 2432
+timestep: 2496
+timestep: 2560
+timestep: 2624
+timestep: 2688
+timestep: 2752
+timestep: 2816
+timestep: 2880
+timestep: 2944
+MAIN_stopClock:
+	usr: 4573.22 sys:    3.34 tot: 4576.56 wct:  389.12 MLUPS: 16.65
+
+LBM_showGridStatistics:
+	nObstacleCells:  343321 nAccelCells:   26912 nFluidCells: 1789767
+	minRho:   0.9171 maxRho:   1.0866 mass: 2.159998e+06
+	minU: 6.018727e-07 maxU: 3.296003e-02
+
+Compute   : 390.780545
+Timer Wall Time: 390.780548
+Pass
+Parboil parallel benchmark suite, version 0.2
+
