@@ -10,7 +10,7 @@
 ./NAS/bin/executeUA.sh, UA-NAS, 4
 ./RODINIA/hotspot/execute.sh, HOTSPOT, 4
 ./RODINIA/lud/execute.sh, LUD, 4
-./RODINIA/streamcluster/executeSC.sh, SC2, 4
+./RODINIA/streamcluster/execute.sh, SC2, 4
 ./NAS/bin/executeSP.sh, SP-NAS, 4
 ./parboil/parboil/executeMRI.sh, MRI, 4
 ./ST/execute.sh, Stream, 4
