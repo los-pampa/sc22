@@ -1,0 +1,37 @@
+I. Description
+--------------
+
+TT-Autoscaling is divided into two modules:  Internal Thread-Throttling (ITT) and Resource Manager (RM). The ITT module works within each container and is responsible for adapting the TLP degree of each application, as organized in the ITT directory. On the other hand, the RM module works at the host OS level, being responsible for managing the execution of the containers (each one running a parallel application) and the hardware resources, as organized in the RM directory.
+
+
+
+II. Configuring GCC with ITT
+----------------------------
+	- Get GCC from GNU website and save in any given directory, e.g., "/home/sc22/gcc/gcc.tar.gz" (for the experiments, we have considered the GCC 10.2.0).
+	- Install GCC in any given folder, e.g., "/home/sc22/gcc/build"
+	- Please read and follow the next steps written in ITT/README
+	- After finalizing the previous step, zip the gcc "build" directory into a new file: "...... gcc_build.zip"
+	- Copy/Move the "gcc_build.zip" file to the directory "ContainerImage" so one can generate the container image with ITT support in step III.
+	- After completing this step, move to step III.
+
+
+III. Creating the Container Image
+---------------------------------
+	- Go to directory "ContainerImage" and follow the guidelines indicated by the respective README.
+	- After completing this step, move to step IV.
+
+
+IV. Compiling the benchmarks
+-----------------------------
+	- Benchmarks are organized in directories inside the "benchmarks" directory. Each benchmark has a Makefile and the execute.sh command used to run the application within the docker image. Therefore, for reproducibility, it is not recommended to change the execute.sh file.
+	- Edit the Makefiles of each benchmark to access the right path of the GCC built in Step II.
+	- Compile the applications. 
+	- Alternatively, you can check if the application has been compiled by running it.
+	- After compiling the applications, move to step V.
+
+
+V. Configuring RM module and executing RM
+-----------------------------------------
+	- please read the file RM/README and follow the guildelines describe in it.
+
+	
