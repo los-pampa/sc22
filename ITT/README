@@ -1,0 +1,53 @@
+I. Description
+--------------
+
+The ITT module works within each container and is responsible for adapting the TLP degree of each OpenMP application.
+It acts individually on each parallel region of any given OpenMP application running in the container. It implements a TT algorithm integrated into the OpenMP library in the container. Next, we describe how it operates and its search strategy. In order to adapt the degree of TLP of each parallel region of OpenMP applications transparently and automatically, the ITT module implements a TT algorithm that does not use any information from previous executions. Instead, it converges to a solution at runtime and uses it within the same application. The solution is composed of the number of threads for each parallel region from the applications, as each region may be better executed with a different number of threads.
+
+
+II. File List
+-------------
+
+Within each platform directory, the following itens can be found:
+	env.c		OpenMP internal controler variables
+	fib.c		ITT functions implementation
+	fib.h		ITT header
+	libgomp.h	libgomp header
+	libgomp_g.h	libgomp header
+	parallel.c	handles the parallel construct
+	Makefile.in	OpenMP libgomp makefile.in
+	Makefile.an	OpenMP libgomp makefile.am
+	team.c		OpenMP functions for team construction and destruction
+
+
+III. Installing ITT
+-------------------
+
+A. Download GCC from gnu website and install it:
+	- already done in the last step of main README.
+
+
+B. Copy all files from the respective platform (Intel or AMD) into the libgomp directory:
+	- $ cp platform/* /path/gcc-version/libgomp/
+
+
+C. Make && Make install:
+	- $ cd /path/gcc-version/
+	- $ make
+	- $ make install
+
+
+IV. Using ITT
+-------------
+
+A. Export PATH:
+	- $ export LD_LIBRARY_PATH=/path-to-gcc-bin/lib64:$LD_LIBRARY_PATH
+
+B. Enabilng EDP optimization:
+	- $ export OMP_FIB=EDP
+
+
+V. Considerations
+-----------------
+
+A. Depending on the Operating System policy to read hardware counters, it may be needed sudo access when running the application with ITT support.
