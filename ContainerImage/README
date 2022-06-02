@@ -18,6 +18,8 @@ A. To generate an image with the ITT enabled, please, do the following steps:
 	- Open Dockerfile and edit the following lines:
 		* line 2: change "COPY ./gcc.zip /home" to "COPY ./gcc_build.zip /home" accordingly to the name of gcc_build.zip defined by the user.
 		* line 3: rename all "gcc.zip" to the name of gcc_build.zip defined by the user.
+		* line 4: change the path: "ENV PATH="/opt/gcc/gcc/bin:${PATH}"" to "ENV PATH="/opt/gcc/gcc_right_name_of_build_folder/bin:${PATH}"
+		* line 5: change the path: "ENV LD_LIBRARY_PATH="/opt/gcc/gcc/lib64:${LD_LIBRARY_PATH}"" to "ENV LD_LIBRARY_PATH="/opt/gcc/gcc_right_name_of_build_folder/lib64:${LD_LIBRARY_PATH}"
 	- Save and close Dockerfile.
 
 B. Command to build the image:
