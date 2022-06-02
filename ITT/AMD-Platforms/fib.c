@@ -313,8 +313,6 @@ void fib_end_parallel_region()
 
 void fib_destructor()
 {
-        int i;
-
         float time = omp_get_wtime() - fibInitGlobalTime;
         fibIdCurrRegion = FIB_MAX_KERNEL - 1;
 	double energy = fib_end_energy();
